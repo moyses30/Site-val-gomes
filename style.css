@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   color: rgb(17, 17, 17);
+  
+}
+
+   body {
+      font-family: 'Amatic SC', cursive;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section {
+      
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+    }
+    .stat {
+      background: #ecf0f1;
+      height: 300px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 6px;
+      flex: 1 1 200px;
+      text-align: center;
+      position: relative;
+      
+    }
+    /* ESTATISTICA */
+    #instagram {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    #tiktok {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+    .orverlay {
+      
+      bottom: 20px;
+      left: 20px;
+      background: rgba(223, 217, 217, 0.5);
+      padding: 10px;
+      border-radius: 4px;
+      
+    }
+
+    /* ESTATISTICA FIM*/
+
+   
+   
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    
+      
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+
+
+
+
+
+
+/*Estilo media*/
+@media screen and (max-width: 1028px) {
+    body{
+        font-size: 1.5rem;
+    }
+    .interface {
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+    
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+   
+
+
+    
+}
