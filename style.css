@@ -201,6 +201,94 @@
       font-size: 1.5rem;
     }
 
+    .txtanimado {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
 
     
 }
+
+/*Estilo media fim*/
+
+/* Animação começo */
+
+#txtanimado{
+  background-color: var(--cor1);
+  border: none;
+}
+.txtanimado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  overflow: hidden;
+  
+}
+.txtanimado span{
+  position: relative;
+}
+
+.txtanimado span::before{
+  content: " ";
+  color: rgb(216, 20, 20);
+  animation : palavra 30s linear infinite;
+}
+
+.txtanimado span::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+}
+
+.txtanimado span::after{
+  content: " ";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid black;
+  right: -10px;
+  animation: cursor 7s infinite, digita 20s steps(15) infinite;
+  width: calc(100% + 13px); 
+  background-color: var(--cor1);
+}
+
+@keyframes digita{
+    10%,15%,30%,35%, 50%,55%,70%,90% , 95% {
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 13px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+         border-left: 2px solid rgb(0, 0, 0);
+    }
+    
+}
+@keyframes palavra {
+    0%, 5%{
+        content: "enha!";
+    }
+    34%, 66%{
+        content: "amos nos unir,";
+    }
+    67%, 80%{
+        content: "encer!";
+    }
+    100%{
+        content: "AL GOMES";
+    }
+    
+        
+
+
+}
+
+/* Animação fim */
