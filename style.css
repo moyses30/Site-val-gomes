@@ -256,7 +256,7 @@
   background-color: var(--cor1);
 }
 
-@keyframes digita{
+ /* @keyframes digita{
     10%,15%,30%,35%, 50%,55%,70%,90% , 95% {
         width: 0;
     }
@@ -273,22 +273,22 @@
     
 }
 @keyframes palavra {
-    0%, 5%{
+    0%, 25%{
         content: "enha!";
     }
-    34%, 66%{
+    26%, 50%{
         content: "amos nos unir,";
     }
-    67%, 80%{
+    51%, 75%{
         content: "encer!";
     }
-    100%{
+     100%{
         content: "AL GOMES";
     }
     
         
 
 
-}
+} */
 
 /* Animação fim */
