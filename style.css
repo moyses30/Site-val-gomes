@@ -110,8 +110,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
-      margin-top: 20px;
-    
+      margin: 10px; 
+      padding: 10px;
+      
       
     }
     .gallery img {
@@ -211,6 +212,15 @@
 }
 
 /*Estilo media fim*/
+
+/* botao valores*/
+#botao{
+  background: black;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  color: white;
+  
+}
 
 /* Animação começo */
 
