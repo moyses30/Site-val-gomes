@@ -215,11 +215,25 @@
 
 /* botao valores*/
 #botao{
-  background: black;
-  border-radius: 10px 10px 10px 10px;
-  width: 150px;
-  color: white;
   
+    padding:10px 40px ;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    border: 0x;
+    border-radius: 30px;
+    cursor: pointer;
+  
+  
+}
+
+#botao:hover{
+    background-color: var(--cor3);
+    color: black;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 /* Animação começo */
