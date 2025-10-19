@@ -215,26 +215,24 @@
 /*Estilo media fim*/
 
 /* botao valores*/
-#botao{
-  
-    padding:10px 40px ;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: 'Amatic SC', cursive;
-    background-color: rgba(0, 0, 0, 0.822);
-    color: white;
-    border: 0x;
-    border-radius: 30px;
-    cursor: pointer;
-  
-  
+
+.btn-valores{
+  display: flex;
+  justify-content: center;
 }
 
-#botao:hover{
-    background-color: var(--cor3);
-    color: black;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+#botao{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  animation: piscar 2s infinite;
+}
+
+#botao > a{
+  text-decoration: none;
+  color: white;
 }
 
 /* Animação começo */
@@ -279,41 +277,18 @@
   animation: cursor 7s infinite, digita 20s steps(15) infinite;
   width: calc(100% + 13px); 
   background-color: var(--cor1);
+
 }
 
- /* @keyframes digita{
-    10%,15%,30%,35%, 50%,55%,70%,90% , 95% {
-        width: 0;
-    }
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
 
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 13px);
-    }
-}
+  50% {
+    opacity: 0;
+  }
+} 
 
-@keyframes cursor {
-    0% {
-         border-left: 2px solid rgb(0, 0, 0);
-    }
-    
-}
-@keyframes palavra {
-    0%, 25%{
-        content: "enha!";
-    }
-    26%, 50%{
-        content: "amos nos unir,";
-    }
-    51%, 75%{
-        content: "encer!";
-    }
-     100%{
-        content: "AL GOMES";
-    }
-    
-        
-
-
-} */
 
 /* Animação fim */
