@@ -105,11 +105,18 @@
     <h2>Valores</h2>
     
     <div class="btn-valores">
-      <button id="botao">
-        <a href="http://127.0.0.1:5501/valores.html" target="_blank" >Clique Aqui</a>
+      <button onclick="botao()" id="botao">
+        Clique Aqui
       </button>
     </div>
   
+  </section>
+
+  <section>
+    <div id="conteudo">
+      <h2>Parcerias e Colaborações</h2>
+      <p>Estou sempre aberta a novas parcerias e colaborações com marcas que compartilham dos meus valores e visão. Se você está interessado em trabalhar comigo, por favor, entre em contato através do email ou WhatsApp fornecidos na seção de contato.</p>
+    </div>
   </section>
 
   <footer>
@@ -118,8 +125,10 @@
 
     
   <script>
-    function abrirjanela(){
-      window.open("http://127.0.0.1:5501/valores.html", "_blank", "width=600,height=400");
+    function botao() {
+      var div = document.getElementById("conteudo");
+
+      div.style.display= div.style.display === "none" ? "block" : "none" ;
     }
   </script>
 

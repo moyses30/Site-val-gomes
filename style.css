@@ -140,7 +140,7 @@
 
 /*Estilo botao social*/
 
-#btnsocial button{
+ button{
   background: var(--cor3);
   border: none;
   color: black;
@@ -155,11 +155,13 @@
   
 }
 
-#btnsocial button:hover{
+ button:hover{
   background: black;
   color: white;
   transform: scale(1.1);
   transition: all 0.3s ease;
+  border-radius: 10%;
+  font-family: 'Amatic SC', cursive;
 }
 
 #btnsocial{
@@ -168,6 +170,8 @@
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+  
+  
 }
 /*Estilo botão social*/
 
@@ -180,6 +184,8 @@
   display: inline-block;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 
@@ -234,7 +240,8 @@
   border: none;
   border-radius: 5px;
   background-color: black;
-  animation: piscar 2s infinite;
+  animation: piscar 3s infinite;
+  color: white;
 }
 
 #botao > a{
